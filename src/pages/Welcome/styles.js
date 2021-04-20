@@ -1,10 +1,10 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native'
 import colors from '../../styles/colors';
 
 export default StyleSheet.create({
     container: {
      flex: 1, 
-     justifyContent: 'space-between', 
+     justifyContent: 'space-around', 
      alignItems: 'center' 
     },
     title: {
@@ -20,6 +20,9 @@ export default StyleSheet.create({
       paddingHorizontal: 20,
       color: colors.heading
     },
+    image: {
+      height: Dimensions.get('window').width * 7
+    },
     button: {
       backgroundColor: colors.green,
       justifyContent: 'center',
@@ -28,10 +31,6 @@ export default StyleSheet.create({
       margin: 18,
       height: 56,
       width: 56
-    },
-    image: {
-     width: 292,
-     height: 294 
     },
     buttonText: {
       color: colors.white,

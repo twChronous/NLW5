@@ -1,5 +1,10 @@
 import React from 'react';
-import { Text, SafeAreaView, Image, TouchableOpacity } from 'react-native'
+import { 
+  Text,
+  SafeAreaView,
+  Image,
+  TouchableOpacity
+ } from 'react-native'
 import wateringImg from '../../assets/watering.png'
 import styles from './styles'
 
@@ -11,7 +16,11 @@ export function Welcome() {
       suas plantas {'\n'}
       de forma fácil </Text>
 
-      <Image source={wateringImg} style={styles.image} />
+      <Image 
+      source={wateringImg} 
+      style={styles.image}
+      resizeMode='contain' 
+      />
 
       <Text style={styles.subtitle}>
         Não esqueça mais de regar suas plantas.
