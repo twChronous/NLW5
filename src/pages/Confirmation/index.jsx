@@ -22,7 +22,7 @@ export default function Confirmation() {
                     plantinhas com muito cuidado
                 </Text>
                 <View style={styles.footer}>
-                    <Button name='Começar' place='Welcome' />
+                    <Button name='Começar' place='PlantSelect' />
                 </View>
             </View>
         </SafeAreaView>
