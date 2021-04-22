@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
-    View,
     Text,
 } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler'

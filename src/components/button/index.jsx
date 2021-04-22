@@ -3,23 +3,14 @@ import {
     TouchableOpacity, 
     Text 
 } from 'react-native';
-import { useNavigation } from '@react-navigation/core'
-
 import styles from './styles';
 
-export default function button({name, place}) {
-
-  const navigation = useNavigation();
-
-  function handleStart() {
-    navigation.navigate(place)
-  }
-
+export default function button({ name, ...rest }) {
     return (
         <TouchableOpacity 
         style={styles.container}
-        onPress={handleStart}
         activeOpacity={0.7}
+        {...rest}
         >
             <Text style={styles.text}>
                 {name}
