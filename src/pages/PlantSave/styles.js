@@ -69,7 +69,7 @@ export default StyleSheet.create({
     dateTimePickerButton: {
         width: '100%',
         alignItems: 'center',
-        paddingVertical: 20,
+        paddingVertical: 30,
     },
     dateTimePickerText: {
         color: colors.heading,
